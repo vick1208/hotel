@@ -39,4 +39,12 @@ class UserFactory extends Factory
             ];
         });
     }
+    public function isTamu()
+    {
+        return $this->state(function (array $attributes) {
+            return [
+                'role' => 'Tamu',
+            ];
+        });
+    }
 }

@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class StatusKamar extends Model
+class Tipe extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'nama',
-        'kode',
         'informasi'
     ];
 }

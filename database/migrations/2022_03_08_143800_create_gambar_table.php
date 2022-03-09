@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('kamar_id')
                 ->constrained('kamar')
                 ->onUpdate('cascade')
-                ->onDelete('cascade');;
+                ->onDelete('cascade');
             $table->longText('url');
             $table->timestamps();
         });

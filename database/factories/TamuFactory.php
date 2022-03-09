@@ -20,7 +20,7 @@ class TamuFactory extends Factory
         return [
             'nama' => $this->faker->name,
             'alamat' => $this->faker->address,
-            'jenis_kelamin' => $this->faker->randomElement(['Male', 'Female']),
+            'jenis_kelamin' => $this->faker->randomElement(['Pria', 'Wanita']),
             'pekerjaan' => $this->faker->jobTitle,
             'tanggal_lahir' => $this->faker->date(),
             'user_id' => User::factory()->isTamu()

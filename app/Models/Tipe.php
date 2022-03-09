@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Tipe extends Model
 {
     use HasFactory;
+
+
+
+    public $table= "Tipe";
+
     protected $fillable = [
         'nama',
         'informasi'

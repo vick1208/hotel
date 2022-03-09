@@ -9,6 +9,8 @@ class Kamar extends Model
 {
     use HasFactory;
 
+    public $table = "Kamar";
+
     protected $fillable = [
         'tipe_id',
         'status_kamar_id',
@@ -27,10 +29,10 @@ class Kamar extends Model
     {
         return $this->belongsTo(StatusKamar::class);
     }
-    public function image()
-    {
-        return $this->hasMany(Gambar::class);
-    }
+    // public function image()
+    // {
+    //     return $this->hasMany(Gambar::class);
+    // }
 
     // public function firstImage()
     // {

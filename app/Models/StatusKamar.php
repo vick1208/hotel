@@ -9,6 +9,8 @@ class StatusKamar extends Model
 {
     use HasFactory;
 
+    public $table= "Status_kamar";
+
     protected $fillable = [
         'nama',
         'kode',
